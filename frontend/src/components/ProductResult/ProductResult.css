@@ -1,0 +1,32 @@
+.product_result {
+    display: flex;
+    flex-flow: row wrap;
+}
+.divproduct {
+    margin-bottom: 5px;
+    padding-left: 0.25%;
+    padding-right: 0.25%;
+    padding-bottom: 5px;
+    width: 12%;
+}
+.divproduct:hover {
+    border-color: rgb(139, 143, 142) !important;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+}
+.product_image {
+    width: 100%;
+    height: 170px;
+}
+.product_info {
+    height: 70px;
+    background-color: #F0EBE3;
+    padding-top: 5px;
+}
+.product_info p {
+    margin: 0;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}

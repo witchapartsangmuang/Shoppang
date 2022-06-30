@@ -1,0 +1,11 @@
+.component_title {
+    height: 30px;
+    border-bottom: 1px solid;
+    border-color: #F5F5F5;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.title_name {
+    color: rgba(0, 0, 0, 0.54);
+    padding-left: 10px;
+}

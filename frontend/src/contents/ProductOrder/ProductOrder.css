@@ -1,0 +1,70 @@
+.product_detail {
+    padding: 10px;
+}
+.product_detail_image {
+    width: 400px;
+    height: 400px;
+}
+.divnumberproduct {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.divnumberproduct div {
+    border: 1px solid;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+}
+.numberorderdisplay {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.minutenumberorder {
+    border-radius: 5px 0 0 5px;
+}
+.plusnumberorder {
+    border-radius: 0 5px 5px 0;
+}
+
+.divbutton {
+    padding: 10px;
+    display: flex;
+    width: auto;
+}
+.divbutton span {
+    width: 10px;
+    padding: 0;
+}
+.AddToCartButton, .BuyButton {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+.AddToCartButton {
+    display: flex;
+    width: 120px;
+    height: 30px;
+}
+.AddToCartButton img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.AddToCartButton p {
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.BuyButton {
+    text-align: center;
+    width: 40px;
+    height: 30px;
+}
+.BuyButton p {
+    margin-top: 2px;
+    margin-bottom: 0;
+}

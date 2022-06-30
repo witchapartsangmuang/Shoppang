@@ -1,0 +1,19 @@
+.category_image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-color: #f5f5f5;
+}
+.divcategory {
+    display: flex;
+    flex-flow: row wrap;
+}
+.category_item {
+    width: 12%;
+    text-align: center;
+    padding: 0.25%;
+}
+.category_item:hover {
+    border-color: rgb(139, 143, 142) !important;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+}
