@@ -29,7 +29,11 @@ urlpatterns = [
     path('products/', ProductGenericsView.as_view(), name='products'),
     path('product/<int:pk>/', ProductDetail.as_view(), name='product-detail'),
     # user
-    # path('token/', LoginView.as_view(), name='token'),
+    path('token/', LoginView.as_view(), name='token'),
+    # cart
+    path('carts/', CartList.as_view(), name='carts'),
+    path('cart/<int:pk>/', CartUpdate.as_view(), name='cart-update'),
+    path('cart/<int:cart_id>/<int:product_id>/', CartDestroy.as_view(), name='cart-destroy')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

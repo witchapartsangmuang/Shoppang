@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+from datetime import timedelta
 from pathlib import Path
 import os
 # from datetime import timedelta
@@ -27,10 +28,10 @@ SECRET_KEY = 'django-insecure-x&81--wl9$3d+*2&q77h%@j2yb6xwoeqo1-4oo25_btw@hmhm2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# SIMPLE_JWT = {
-#     'ACCESS_TOKEN_LIFETIME': timedelta(hours=10),
-#     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-# }
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(hours=10),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+}
 
 # Application definition
 
@@ -41,10 +42,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework_simplejwt',
+    'rest_framework.authtoken',
     'rest_framework',
-    "corsheaders",
+    'corsheaders',
     'backend'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

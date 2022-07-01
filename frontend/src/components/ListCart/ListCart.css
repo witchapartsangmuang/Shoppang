@@ -12,41 +12,41 @@
     text-align: center;
 }
 .title_productname, .body_productname {
-    width: 30%;
+    width: 20%;
     text-align: center;
 }
 .title_productprice, .body_productprice {
-    width: 10%;
+    width: 15%;
     text-align: center;
 }
 .title_numberorder, .body_numberorder {
-    width: 30%;
-    text-align: center;
-}
-.title_action, .body_action {
     width: 10%;
     text-align: center;
 }
-
-
+.title_total, .body_total {
+    width: 15%;
+    text-align: center;
+}
+.title_action, .body_action {
+    width: 20%;
+    text-align: center;
+}
 
 .body_numberorder, .body_action {
     display: flex;
     justify-content: center;
 }
-.operatornumberorder {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border: 1px solid;
-    border-color: #e8e8e8;
-}
+
 .displaynumberorder {
     width: 40px;
     height: 30px;
     text-align: center;
     border: 1px solid;
     border-color: #e8e8e8;
+}
+.displaynumberorder input {
+    width: 40px;
+    height: 30px;
 }
 
 .orderitem {
@@ -69,7 +69,7 @@
     border: 1px solid;
     border-color: #e8e8e8;
     height: 25px;
-    width: 60%;
+    width: 35%;
 }
 .deleteactionbutton:hover {
     color: red;
